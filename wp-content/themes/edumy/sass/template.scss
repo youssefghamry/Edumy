@@ -1,0 +1,72 @@
+/*------------------------------------------------------------------
+[Table of contents]
+1. base
+2. elements
+3. form
+4. layout
+5. menu
+6. pages 
+7. post
+8. event 
+9. course
+10. effect
+11. utilities 
+12. elements
+12. widgets
+12. responsive
+-------------------------------------------------------------------*/
+// import variables and mixins
+@import "rtl/rtl";
+@import "vars/vars-global";
+@import "vars/variables";
+@import "vars/template-vars";
+@import "mixins/mixins";
+@import "mixins/template-mixins";
+@import "mixins/mixins-grid";
+
+/* 1. base */
+@import "template/base";
+
+/* 2. elements */
+@import "template/widgets-layout";
+
+/* 3. form */
+@import "template/form";
+
+/* 4. layout */
+@import "template/layout";
+
+/* 5. menu */
+@import "template/menu";
+
+/* 6. pages */
+@import "template/pages";
+
+/* 7. post */
+@import "template/post";
+
+/* 8. event */
+@import "template/event";
+
+/* 9. course */
+@import "template/course";
+
+/* 9. instructor */
+@import "template/instructor";
+
+/* 10. effect */
+@import "template/theme-effect";
+
+/* 11. utilities */
+@import "template/utilities";
+
+/* 12. widgets layout */
+
+@import "template/elements";
+
+/* 13. widgets */
+@import "template/widgets";
+
+/* 14. responsive */
+
+@import "template/responsive";

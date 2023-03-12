@@ -1,0 +1,243 @@
+
+---Downloaded files---
+The import files for: Home 1 were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/wordpress/Edumy
+Data file = C:\xampp\htdocs\wordpress\Edumy/wp-content/themes/edumy/inc/vendors/one-click-demo-import/default/dummy-data.xml
+Widget file = C:\xampp\htdocs\wordpress\Edumy/wp-content/themes/edumy/inc/vendors/one-click-demo-import/default/widgets.wie
+Customizer file = not defined!
+Redux files:
+edumy_theme_options -> C:\xampp\htdocs\wordpress\Edumy/wp-content/themes/edumy/inc/vendors/one-click-demo-import/default/redux-options1.json 
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---ocdi/before_widgets_import---
+
+
+---Importing widgets---
+Sidebar Default : 
+
+Search - No Title - Imported
+Recent Posts - No Title - Imported
+Recent Comments - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+
+Blog sidebar : 
+
+Search - No Title - Imported
+Categories - Categories - Imported
+Apus Recent Posts Widget - Recent Posts - Imported
+Tag Cloud - Tags - Imported
+
+Shop Sidebar : 
+
+Filter Products by Price - Price - Imported
+Categories - Categories - Imported
+Product Tag Cloud - Product Tags - Imported
+
+Courses archive Sidebar : 
+
+Courses:: Filter Categories - Categories - Imported
+Courses:: Filter Levels - Levels - Imported
+Courses:: Filter Ratings - Ratings - Imported
+Courses:: Filter Instructors - Instructors - Imported
+Courses:: Filter Prices - Prices - Imported
+
+Course single Sidebar : 
+
+Single Course:: Information - No Title - Imported
+Single Course:: Features - Course Features - Imported
+Single Course:: Tags - Course Tags - Imported
+
+Event single Sidebar : 
+
+Single Event:: Detail - Event Details - Imported
+Single Event:: Contact - Event Contact - Imported
+Single Event:: Tags - Event Tags - Imported
+
+Profile Sidebar : 
+
+Profile:: Instructor Info - Contact - Imported
+Courses:: Filter Instructors - Instructors - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: edumy_theme_options finished successfully!
+
+---ocdi/after_import---
+

@@ -1,0 +1,240 @@
+/*
+Theme Name: Edumy
+Theme URI: https://apusthemes.com/edumy
+Author: ApusTheme
+Author URI: https://apusthemes.com/
+Description: Edumy – Education WordPress Theme For education, school, college, institute, university, online learning, training and kindergarten is a premium WordPress theme
+Version: 1.2.11
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: edumy
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+img{
+    max-width: 100%;
+    height:auto;
+ }
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    clear: both;
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 32px 2em;
+}
+.wp-block-image .alignright{
+    margin-left: 2em;
+}
+.alignleft {
+    float: left;
+    margin: 5px 2em 32px 0;
+}
+.wp-block-image .alignleft{
+    margin-right: 2em;
+}
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 10px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+.gallery-caption {
+    box-sizing: border-box;
+}
+.bypostauthor{
+    box-sizing: border-box;
+}
+.wp-block-pullquote{
+    border:none;
+}
+.wp-block-archives.aligncenter, .wp-block-categories.aligncenter, .wp-block-latest-posts.aligncenter {
+    text-align: center;
+}
+.wp-block-cover, .wp-block-cover-image{
+    margin-bottom: 28px;
+}
+
+@media(min-width: 1200px){
+    .apus-footer .widget-contact-intro .menu li,
+    .apus-footer .widget-nav-menu.dark .menu li,
+    .apus-footer .widget-nav-menu.vertical .menu li{
+        margin-bottom: 10px;
+    }
+
+    .apus-footer .widget-contact-intro .menu li:last-child,
+    .apus-footer .widget-nav-menu.dark .menu li:last-child,
+    .apus-footer .widget-nav-menu.vertical .menu li:last-child{
+        margin-bottom: 0;
+    }
+}
+.content-item-description iframe {
+    width: 100% !important;
+}
+rs-module-wrap{
+    z-index: 0;
+}
+@media(max-width: 480px){
+    #order_review .product-name {
+        max-width: 150px;
+    }
+}
+
+.lp-list-table .column-course{
+    min-width:150px;
+}
+.lp-list-table .column-status,
+.lp-list-table .column-passing-grade,
+.lp-list-table .column-date{
+    white-space: nowrap;
+}
+@media(max-width:767px){
+    .learn-press-subtab-content{
+        overflow-x:auto;
+    }
+    .lp-list-table th, .lp-list-table td{
+        padding:10px !important;
+    }
+}
+
+.course-video iframe {
+    width: 100% !important;
+}
+
+.detail-course .course-meta {
+    display: block;
+}
+
+.apus-breadscrumb .learn-press-breadcrumb {
+    width: auto;
+}
+
+.review-stars-rated ul.review-stars:not(.filled) li, .comment-form-rating ul.review-stars:not(.filled) li{
+    color: #ddd;
+}
+.review-stars-rated ul.review-stars:not(.filled) li span, .comment-form-rating ul.review-stars:not(.filled) li span {
+    color: #ddd;
+}
+
+.comment-form-rating .review-stars li.active span {
+  color: #ddd;
+}
+.course-students1 .flaticon-profile:before {
+    font-size: 13px;
+    margin-left: 0;
+}
+
+.comment-list{
+    list-style: none !important;
+    padding: 30px !important;
+}
+.w-100{
+    width: 100% !important;
+}
+.m-0{
+    margin: 0 !important;
+}
+.d-block{
+    display: block !important;
+}
+.learn-press-courses .course{
+    margin-bottom: 30px !important;
+}
+
+@media(max-width: 1199px){
+    .comment-list{
+        padding: 15px !important;
+    }
+    .learn-press-courses .course{
+        margin-bottom: 15px !important;
+    }
+}
+.detail-course .course-author .author-image{
+    width: 96px;
+}

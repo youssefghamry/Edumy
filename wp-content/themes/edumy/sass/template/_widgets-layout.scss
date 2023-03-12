@@ -1,0 +1,169 @@
+/* block */
+.#{$block-selector} {
+    overflow: visible;
+    position: relative;
+    background: transparent;
+    margin-bottom: $block-module-margin-bottom;    
+    padding: $block-module-padding;    
+    .#{$block-heading-selector}{
+        font-size: 26px;
+        font-weight: 700;
+        padding: 0;
+        margin: 15px 0 58px 0;
+        position: relative;
+        text-align: center;
+    }
+}
+// Sidebar
+.sidebar,
+.#{$app-prefix}-sidebar {
+    .widget{
+        padding: 30px;
+        margin: 0 0 30px 0;        
+        border: 2px solid $border-color;
+        @include border-radius(5px);
+        .#{$block-heading-selector}{
+            font-size: 20px;
+            padding: 0;
+            margin: 0 0 15px 0;
+            font-weight: 600;
+            line-height: 30px;
+            text-transform: none;
+            @include rtl-text-align-left();
+            a{
+                img{
+                    display: none;
+                }
+            }             
+        }        
+        &.widget_nav_menu{
+            ul{
+                li{
+                    .sub-menu{
+                        outline: none;
+                    }
+                }         
+            }     
+        } 
+        &.widget_search{
+            padding: 0;
+            border: 0;
+        }
+        &.widget_text{
+            border: 0;
+            padding: 0;
+            strong{
+                color: $text-second;
+            }
+            .wp-caption{
+                &.alignnone {
+                    margin: 5px 0px 20px 0;                    
+                    padding: 0;
+                    max-width: 100%;
+                }
+            }            
+        }               
+        select{
+            margin-bottom: 0;
+            margin-top: 8px;
+        }
+        .post-widget{
+            margin-top: 20px;
+        }
+    }
+    // widet porducts list
+    .apus-products-list{
+        border-style: solid;
+        border-color: $border-color;
+        border-width: 0 1px 1px;
+        .product-block{
+            padding: 20px;
+            margin: 0;
+        }
+    }
+    // widget instagram
+    .row.instagram-pics{
+        margin-left: -6px;
+        margin-right: -6px;
+        > [class*="col-md"]{
+            padding-left: 6px;
+            padding-right: 6px;
+            margin-bottom: 12px;
+        }
+    }
+    // widget single images
+    .widget_apus_single_image{
+        margin-bottom: 30px;
+    }
+}
+.page-shop{
+    .sidebar,
+    .#{$app-prefix}-sidebar {
+        .widget{
+            .#{$block-heading-selector}{
+                font-size: 15px;
+                margin: 0 0 20px;
+                font-weight: 600;
+                text-transform:uppercase;
+                letter-spacing:1px;
+            }
+        }
+    }
+}
+// top bar
+#apus-topbar{
+    // widget info
+    .info-topbar{
+        .textwidget{
+            > span{
+                @include rtl-padding-right(10px);
+                @include rtl-margin-right(10px);
+                @include rtl-float-left();
+                @include rtl-border-right(1px solid $border-color);
+                &:last-child{
+                    border: 0;
+                }
+            }
+        }
+        .fa{
+            @include rtl-margin-right(8px);
+        }
+    }
+}
+// footer 
+.apus-footer{
+    .#{$block-heading-selector}{
+        color: $footer-heding-title-color;
+    }
+    .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid > li{
+        margin-bottom:20px;
+    }
+    &.dark {
+        .#{$block-heading-selector}{
+            color:$white;
+        }
+        background:#000000;
+        color:#999999;
+        a{
+            color:#999999;
+            &:hover,&:focus{
+                color:$white;
+            }
+        }
+    }
+}
+// copyright
+.apus-copyright{
+    .wpb_content_element,
+    .widget{
+        margin-bottom: 0 !important;
+    } 
+    .menu li{
+        display: inline-block;
+        @include rtl-margin-right(10px);
+        margin-bottom:0;
+        &:last-child{
+            margin:0;
+        }
+    } 
+}

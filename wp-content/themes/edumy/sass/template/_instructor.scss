@@ -1,0 +1,664 @@
+.widget{
+	&.widget-instructors{
+		.job{
+			margin-bottom: 0;
+		}
+		.instructor-name{
+			font-size: 18px;
+			font-weight: 400;
+			margin: 0 0 5px 0;	
+		}
+		.instructor-cover{
+			margin-bottom: 20px;
+			img{
+				@include border-radius(100%);
+			}
+		}
+		.instructor-grid{
+			padding: 18px;
+			text-align: center;
+			margin-bottom: 30px;
+			border: 2px solid $border-color;
+			@include border-radius(5px);
+			@include box-shadow(none);
+			@include transition-all();			
+			@include hover-focus-active() {
+				@include box-shadow(0px 0px 30px 0px rgba(32, 32, 32, 0.15)); 
+			}
+		}
+		&.style1{
+			.slick-carousel{
+				.slick-arrow{
+					margin: 0px;
+					background-color: $white;					
+					@include square(50px);
+					@include flexbox();
+					@include align-items(center);
+					@include justify-content(center);
+					@include border-radius(4px);
+					@include transition-all();
+					@include box-shadow(0px 1px 4px 0px rgba(0, 0, 0, 0.09));
+					@include hover-focus-active() {
+						background-color: $theme-color;
+						[class*="icon"]{
+							&:before{
+								color: $white;
+							}
+						}
+					}
+					[class*="icon"]{
+						&:before{
+							margin: 0px;
+							font-size: 15px;
+							color: $headings-color;
+						}
+					}
+					&.slick-prev{
+						@include rtl-left(-70px);
+					}
+					&.slick-next{
+						@include rtl-right(-70px);
+					}
+				}
+				.instructor-grid{					
+					padding: 30px 15px;
+					border: 0;
+					margin: 0px;
+					@include border-radius(0);
+					@include box-shadow(none);
+					@include hover-focus-active() {
+						@include box-shadow(none);
+					}
+					.instructor-cover{
+						img{
+							@include inline-block();
+						}
+					}
+					.instructor-grid-inside{
+						padding: 20px;
+						border: 2px solid $border-color;
+						@include border-radius(5px);
+						@include box-shadow(none);
+						@include transition-all();
+						@include hover-focus-active() {
+							@include box-shadow(0px 0px 30px 0px rgba(32, 32, 32, 0.15));
+						}
+					}
+				}
+			}
+		}
+		&.style2{
+			.instructor-grid{
+				border: 0;
+				margin-bottom: 18px;
+				text-align: center;
+				@include box-shadow(none);
+				.metas{					
+					@include flexbox();
+					@include align-items(center);
+					@include justify-content(center);
+					display: none;
+					> div{
+						margin: 0 5px;
+						position: relative;
+					}
+					.students{						
+						&:before {
+							content: "\f11e";	
+							font-size: 26px;
+							@include rtl-margin-right(10px);						
+							font-family: $icon-font-family;
+						}
+					}
+					.courses{
+						&:before {
+							content: "\f12c";
+							font-size: 26px;
+							@include rtl-margin-right(10px);						
+							font-family: $icon-font-family;							
+						}	
+					}
+				}
+				.instructor-name{
+					font-size: 20px;
+				}
+				.instructor-cover{
+					img {
+						display: inline;
+					}
+				}
+			}
+		}
+		&.highlight{
+			.instructor-name{
+				a{
+					color: #192675;
+				}
+			}			
+		}
+	}
+}
+
+#learn-press-profile-header1{
+ 	.lp-profile-avatar{
+ 		.instructor-cover{
+ 			img{
+	 			@include border-radius(100%);
+	 		}
+ 		}	 		
+ 	}
+}
+
+.learnpress{
+	.lp-profile-content{
+		.learn-press-form{			
+			.form-fields{
+				.form-field{
+					select{
+						min-width: 200px;
+					}
+				}
+				.form-field-input{
+					display: block;
+				}
+			}
+		}
+	}
+	.lp-avatar-preview {	
+		@include border-radius(5px);
+		background-color: $table-bg-accent;
+	}
+	.learn-press-form{
+		&.completed{
+			p{
+				color: $white;
+				@include inline-block();				
+				@include border-radius(5px);
+				padding: 5px 15px;
+				text-align: center;				
+				font-size: 14px;
+				font-weight: 600;
+				background-color: $brand-success;
+				font-family: $headings-font-family;
+				i{
+					color: $white;
+				}
+			}
+		}
+		.form-fields{
+			.form-field-input{
+				@include flexbox();
+				@include align-items(center);
+				input[type="checkbox"]{
+					margin: 0px 5px 0px 0px;
+				}
+			}
+			.form-field{
+				select{
+					background-position: 90% 50%;
+				}
+			}
+		}
+	}
+	.lp-tab-sections{
+		background-color: transparent;
+		.section-tab{
+			@include rtl-margin-left(0);
+			@include rtl-margin-right(20px);
+			span,a{
+				padding: 10px 0;
+			}
+			&.active{
+				a,
+				span{
+					color: $theme-color;
+					border-color: $theme-color;
+				}
+			}
+		}
+	}	
+	.learn-press-message{
+		background-color: $table-bg-accent;		
+		&:before{
+			background-color: $theme-color;
+		}
+		a{
+			color: $theme-color;
+		}
+	}
+	.lp-sub-menu{
+		padding: 0px 0px 10px 0px;
+		margin: 0px 0px 20px 0px;
+		li{
+			span{
+				color: $theme-color;
+			}
+		}
+	}
+	.lp-profile-cover{
+		@include clearfix();
+		.instructor-cover{
+			@include square(96px);
+			margin: 0 auto 10px auto;
+		}		
+	}
+	.learn-press-profile-dashboard{
+		p{
+			margin-bottom: 0px;			
+		}
+	}
+	#learn-press-profile-header1{
+		height: 200px;
+		background-color: transparent;
+		width: 100%;
+		margin-bottom: 0px;	
+		z-index: 0;
+		.lp-profile-avatar {
+			@include center-align(absolute);
+			bottom: auto;
+			top: 0;
+		}
+	}	
+	#learn-press-profile-content {	
+		width: 100%;
+		margin: 0;		
+		float: none;
+    	overflow: visible;
+    	padding: 40px 0px 0px 0;
+		@include clearfix();
+		.user-bio{	
+			margin-bottom: 40px;
+			.user-bio-description{
+				white-space: pre-line;
+				margin-bottom: 40px;
+			}
+		}
+	}
+	#learn-press-profile-nav{		
+		padding-top: 0;
+		float: none;
+		margin: 0px 0px 0px 0px;
+		background-color: transparent;		
+		display: block;
+		padding: 0;
+		&:before{
+			content: none;
+		}
+		.tabs{
+			background-color: transparent;			
+			list-style: none;
+			padding:0;
+			margin:0;
+			text-align: center;
+			@include clearfix();			
+			@include box-shadow(0px 4px 4px -4px rgba(0, 0, 0, 0.09));
+			> li{
+				@include rtl-float-left();	
+				position: relative;		
+				margin: 0;	
+				&.has-child{
+					&:after{
+						content: '';
+						position: absolute;
+						bottom: -30px;					
+						background-color: transparent;
+						@include rtl-left(0);		
+						@include rtl-right(0);		
+						@include size(100%,30px);
+					}
+				}				
+				@include hover() {
+					> ul{
+						visibility: visible;
+						@include opacity(1);						
+						pointer-events: auto;
+						@include translateY(0px);
+						> li{
+							&:after{
+								pointer-events: auto;
+							}
+						}
+					}
+					&:not(.active) {
+						> a {
+							background-color: $table-bg-accent;
+							color: $theme-color;
+						}
+					} 					
+				}				
+				&.active{
+					> a {
+						background-color: $table-bg-accent;
+						color: $theme-color;
+						&:after{
+							bottom: 0px;
+							content: '';
+							background-color: $theme-color;						
+							position: absolute;
+							@include size(100%,2px);
+							@include rtl-right(0);
+						}
+					}
+				} 				
+				a {
+					display: block;
+					color: $headings-color;					
+					position: relative;										
+					@include transition-all();
+					@include rtl-padding(13px, 30px, 13px, 60px);
+					@include border-radius-separate(5px,5px,0px,0px);
+					@include hover-focus-active() {
+						color: $theme-color;
+						&:before{
+							color: $theme-color;
+						}	
+					}
+					&:before{
+						content: "\f151";
+						font-size: 22px;											
+						font-family: $icon-font-family;
+						@include vertical-align(absolute);
+						@include rtl-left(30px);						
+						@include rtl-margin(0, 10px, 0, 0);
+					}
+					> i{
+						display: none !important;
+					}
+				}
+				&.courses{
+					a:before{
+						content: "\f124";
+					}					
+				}
+				&.quizzes{
+					a:before{
+						content: "\f130";
+					}
+				}
+				&.orders{
+					a:before{
+						content: "\f13c";
+					}
+				}		
+				&.settings{
+					a:before{
+						content: "\f147";
+					}
+				}		
+				.profile-tab-sections{
+					list-style: none;
+					display: block;					
+					position: absolute;					
+					width: 210px;
+					z-index: 10;
+					margin: 0;
+					padding: 10px 0px !important;
+					visibility: hidden;
+					pointer-events: none;
+					background: $white !important;
+					top: 140% !important;
+					@include rtl-text-align-left();
+					@include rtl-left(0 !important);
+					@include opacity(0);					
+					@include border-radius(5px);					
+					@include transition-all();	
+					@include translateY(20px);				
+					@include box-shadow(0px 1px 4px 0px rgba(0, 0, 0, 0.09));					
+					&:before{						
+						top: -8px;
+						content: "";
+						position: absolute;		
+						background: $white;
+						@include square(0);								
+						@include rtl-left(34px);												
+						@include square(16px);								
+						@include rotate(45deg);		
+						@include box-shadow(-2px -2px 10px -5px rgba(0, 0, 0, 0.4)); 
+					}
+					li{
+						a{
+							padding: 6px 20px;
+							color: $headings-color;
+							@include hover-focus-active() {
+								color: $theme-color;
+							}
+							&:before{
+								display: none;
+							}
+						}
+					}
+				}				
+			} 			
+		} 		
+	} 	
+	#profile-content-courses{
+		background-color: transparent;
+		.profile-heading{
+			margin-bottom: 30px;			
+		}
+		.lp-tab-sections{
+			background-color: transparent;
+			margin-bottom: 40px;
+			border:0;
+			&:before{
+				display: none;
+			}
+			li{
+				margin: 0 5px 0 0;
+				padding: 0;		
+				font-size: 16px;
+				font-weight: 400;
+				color: $headings-color;
+				border:none;
+				&:before,
+				&:after{
+					display: none;
+				}			
+				a,span{					
+					padding: 10px 20px;
+					margin: 0;
+					background: $table-bg-accent;
+					@include rtl-float-left();					
+				}
+				&.active{
+					color: $theme-color;
+					a,
+					span{
+						color: $theme-color;
+						border-bottom:2px solid $theme-color;
+					}
+				}
+			}
+		}
+	}
+	#profile-content-orders{
+		.profile-heading{
+			margin: 0 0 30px 0;
+		}
+	}
+	.lp-user-profile{
+		@include clearfix();
+		padding-bottom: 18px;
+		.profile-name {		
+			position: static;			
+			font-size: 18px;
+			text-transform: capitalize;
+			font-weight: 600;
+			margin: 0 0 10px 0;			
+		}
+		.lp-profile-avatar{
+			.job{
+				text-align: center;
+			}
+		}		
+	} 
+	.lp-profile-content{
+		.list-education-info,
+		.list-experience-info{
+			margin-bottom: 3px;
+			@include flexbox();
+			@include align-items(center);			
+		}		
+		.section-title{
+			font-size: 20px;
+			font-weight: 600;			
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+		ul.list-education,
+		ul.list-experience{
+			list-style: none;
+			padding: 0;			
+			margin: 0px;
+			position: relative;	
+			&.list-experience{
+				> li{
+					&:last-child{
+						margin-bottom: 0px;
+					}
+				}
+			}				
+			&:before{
+				top: 0;
+				content: '';
+				position: absolute;
+				background-color: #f9fafc;
+				@include rtl-left(7px);
+				@include size(4px,100%);				
+			}
+			.title{
+				font-size: 18px;
+				font-weight: 400;				
+				margin-top: 0;
+				margin-bottom: 0;
+				@include rtl-margin-right(12px);
+			}
+			li{
+				position: relative;
+				margin-bottom: 40px;
+				@include flexbox();
+				@include flex-direction(column);				
+				@include rtl-padding-left(40px);				
+				&:before{					
+					border: 2px solid $theme-color;
+					background-color: $white;					
+					content: "";
+					position: absolute;					
+					top: 4px;
+					@include rtl-left(0);
+					@include border-radius(100%);
+					@include square(18px);
+				}
+				&:after{
+					content: '';
+					background-color: $theme-color;					
+					position: absolute;
+					top: 8px;
+					@include rtl-left(4px);
+					@include square(10px);
+					@include border-radius(100%);					
+				}
+				&:nth-child(2n) {
+					&:before{
+						border-color: $theme-color-second;
+					}
+					&:after{
+						background-color: $theme-color-second;
+					}
+				}
+			}			
+		}
+	}
+}
+
+.learnpress{	
+	.lp-label{
+		background-color: $price-color;
+		color: #fff;
+		padding:3px 5px;
+		font-size: 12px;
+	}
+	.lp-list-table{
+		thead{
+			tr{
+				th{
+					background-color: $theme-color;
+					color: #fff;
+					font-size: 16px;
+					font-family: $headings-font-family;
+					font-weight: 400;
+					&:first-child{
+						@include border-radius-separate(5px,0px,0px,0px);
+					}
+					&:last-child{
+						@include border-radius-separate(0px,5px,0px,0px);
+					}
+				}	
+			} 
+		} 	
+	}
+}
+
+.learnpress-page{
+	.learnpress{	
+		.lp-button{
+			height: 50px;
+		}
+	}	
+}
+body{
+	#learn-press-profile #profile-sidebar{
+		margin:0;
+		width: 100%;
+		@include box-shadow(none);
+		@include border-radius(0);
+	}
+	#lp-profile-cover{
+		@include clearfix();
+		text-align: center;
+		.lp-user-profile-avatar{
+			@include square(96px);
+			margin: 0 auto 10px auto;
+			img{
+				@include border-radius(50%);
+			}
+		}
+		.lp-profile-username{
+			margin-top: 15px;
+			color: $link-color;
+			font-size: 18px;
+			font-weight: 600;
+			font-family: nunito,Arial,sans-serif;
+		}		
+	}
+	#learn-press-profile .wrapper-profile-header{
+		color: $link-color;
+		padding:0 0 30px 0;
+		background-color: transparent;
+		@media(min-width: 1200px){
+			padding:0 0 50px;
+		}
+	}
+	#learn-press-profile #profile-content{
+		width: 100%;
+		float: none;
+		> *{
+			padding-top: 30px;
+			@media(min-width: 1200px){
+				padding-top: 40px;
+			}
+		}
+	}
+	div.order-recover input[type="text"]{
+		height: 50px;
+		@include border-radius(9px);
+	}
+	#learn-press-profile-basic-information .form-field > label, form[name="profile-change-password"] .form-field > label{
+		font-weight: 600;
+		font-style: normal;
+		color: $text-color;
+	}
+}
+.user-bio{	
+	margin-bottom: 40px;
+}
